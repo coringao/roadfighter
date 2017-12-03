@@ -1,0 +1,16 @@
+#####################################################################
+# Copyright 2003-2009 Santi Ontanon 
+# Work continued by 2017 Carlos Donizete Froes [a.k.a coringao]
+#
+# This file is part of Road Fighter Remake.
+# This is free software, licensed under the GPL 2 license.
+#####################################################################
+
+**version: 1.0.0**
+ * Acquired originally from the official site and holder by copyright
+ * Starting project continuity in version 1.0.0
+ * Removed 'build' and 'fonts' directory from original source
+ * Added 'fonts-dejavu' to source
+ * Changed directory and file removal
+ * Changed audio format (.ogg)
+ * Some bug fixes in files
