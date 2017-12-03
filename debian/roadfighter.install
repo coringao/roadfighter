@@ -1,0 +1,3 @@
+debian/roadfighter.desktop	usr/share/applications
+graphics/roadfighter.png	usr/share/pixmaps
+roadfighter			usr/games

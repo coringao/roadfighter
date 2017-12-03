@@ -1,0 +1,3 @@
+# Control file for Debian 'autopkgtests'.
+Test-Command: /bin/true
+Depends: @
