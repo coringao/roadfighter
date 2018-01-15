@@ -1,7 +1,7 @@
 **How to contribute**
 ---------------------
 
-I love contributions from everyone!
+First off, thanks for taking the time to contribute! I love contributions from everyone!
 
 There are only a few guidelines that we encourage contributors to follow
 so that we can accept and maintain third party changes.
