@@ -3,16 +3,16 @@ Section: games
 Priority: optional
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Uploaders: Carlos Donizete Froes <coringao@riseup.net>
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper (>= 11),
                libsdl-image1.2-dev,
                libsdl-mixer1.2-dev,
                libsdl-ttf2.0-dev,
                libsdl1.2-dev,
                ttf-dejavu
-Standards-Version: 4.1.1
+Standards-Version: 4.1.3
 Homepage: https://github.com/coringao/roadfighter
-Vcs-Git: https://anonscm.debian.org/git/pkg-games/roadfighter.git
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-games/roadfighter.git
+Vcs-Git: https://salsa.debian.org/games-team/roadfighter.git
+Vcs-Browser: https://salsa.debian.org/games-team/roadfighter
 
 Package: roadfighter
 Architecture: any
@@ -32,9 +32,10 @@ Description: Drive a car in a death race
 
 Package: roadfighter-data
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Suggests: roadfighter
-Description: Drive a car in a death race (Data)
+Description: Drive a car in a death race (data file)
  Road Fighter Remake is a racing game at you drive car
  in a death race between you and a group of crazy drivers.
  .
