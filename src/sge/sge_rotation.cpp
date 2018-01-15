@@ -15,7 +15,7 @@
  *  version 2 of the License, or (at your option) any later version. *
  *********************************************************************/
 
-#include "SDL/SDL.h"
+#include "SDL.h"
 #include <stdio.h>
 #include <math.h>
 #include "sge_rotation.h"

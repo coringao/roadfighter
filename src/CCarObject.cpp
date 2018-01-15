@@ -18,9 +18,9 @@
     Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301  USA
 */
 
-#include "SDL/SDL.h"
-#include "SDL/SDL_ttf.h"
-#include "SDL/SDL_mixer.h"
+#include "SDL.h"
+#include "SDL_ttf.h"
+#include "SDL_mixer.h"
 
 #include "CTile.h"
 #include "CObject.h"

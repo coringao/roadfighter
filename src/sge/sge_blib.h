@@ -18,7 +18,7 @@
 #ifndef sge_blib_H
 #define sge_blib_H
 
-#include "SDL/SDL.h"
+#include "SDL.h"
 #include "sge_internal.h"
 
 

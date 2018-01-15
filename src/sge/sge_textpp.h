@@ -21,7 +21,7 @@
 #ifndef sge_textpp_H
 #define sge_textpp_H
 
-#include "SDL/SDL.h"
+#include "SDL.h"
 #include "sge_internal.h"
 
 #ifndef _SGE_NO_CLASSES

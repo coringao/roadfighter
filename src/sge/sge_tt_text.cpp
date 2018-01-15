@@ -24,8 +24,8 @@
 */	
 
 
-#include "SDL/SDL.h"
-#include "SDL/SDL_endian.h"
+#include "SDL.h"
+#include "SDL_endian.h"
 #include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>

@@ -18,7 +18,7 @@
 #ifndef sge_misc_H
 #define sge_misc_H
 
-#include "SDL/SDL.h"
+#include "SDL.h"
 #include "sge_internal.h"
 
 #ifdef _SGE_C

@@ -29,9 +29,9 @@
 #include <stdlib.h>
 #include "ctype.h"
 #include "math.h"
-#include "SDL/SDL.h"
-#include "SDL/SDL_image.h"
-#include "SDL/SDL_ttf.h"
+#include "SDL.h"
+#include "SDL_image.h"
+#include "SDL_ttf.h"
 
 #include "auxiliar.h"
 #include "List.h"
