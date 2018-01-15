@@ -47,9 +47,7 @@ Special Thanks To:
 **Necessary dependencies**
 --------------------------
 
-You will need to have the following dependencies installed:
-
-  * **SDL, SDL_image, SDL_mixer, SDL_ttf, ttf-dejavu**
+You will need to have the following dependencies installed: **SDL, SDL_image, SDL_mixer, SDL_ttf, ttf-dejavu**
 
 On Debian/Ubuntu you can get all necessary packages by typing:
 
@@ -70,11 +68,11 @@ License
 =======
 
 > The Road Fighter Remake project as a whole is distributed under the terms of
-> the GNU General Public License, version 2 or later (GPL-2+),
-> since it contains code made available under multiple GPL-compatible licenses.
+> the GNU General Public License, version 2 or later, since it contains code made
+> available under multiple GPL-compatible licenses.
 > We would encourage new contributors to distribute files under this license.
 
-Copyright (C) 2003-2009 **Santi Ontanon** - This file was officially downloaded
+Copyright (c) 2003-2009 **Santi Ontanon** - This file was officially downloaded
 from http://roadfighter.jorito.net
 
-Copyright (C) 2017 - Work continued by **Carlos Donizete Froes [a.k.a coringao]**
+Copyright (c) 2017 - Work continued by **Carlos Donizete Froes [a.k.a coringao]**
