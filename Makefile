@@ -3,7 +3,7 @@
 # Work continued by 2017 Carlos Donizete Froes [a.k.a coringao]
 #
 # This file is part of Road Fighter Remake.
-# This is free software, licensed under the GPL 2 license.
+# This is free software, licensed under the GPLv2 license.
 #####################################################################
 
 EXE = roadfighter
