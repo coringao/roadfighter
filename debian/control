@@ -34,7 +34,6 @@ Package: roadfighter-data
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
-Suggests: roadfighter
 Description: Drive a car in a death race (data file)
  Road Fighter Remake is a racing game at you drive car
  in a death race between you and a group of crazy drivers.
