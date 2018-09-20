@@ -31,9 +31,9 @@ OBJS = \
 	$(SRCDIR)/sound.o								\
 	$(SRCDIR)/main.o
 
-CC = gcc
+CC = g++
 CPPFLAGS += -std=gnu++14 -g3 -O3 -fPIE -D_FORTIFY_SOURCE=2 `sdl-config --cflags`
-LDFLAGS += -fPIE -pie `sdl-config --libs` -lSDL_image -lSDL_mixer -lSDL_ttf
+LDFLAGS += -fPIE -pie -lm `sdl-config --libs` -lSDL_image -lSDL_mixer -lSDL_ttf
 
 RM = rm -rf
 ECHO = echo
