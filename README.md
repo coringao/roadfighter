@@ -72,7 +72,7 @@ License
 > available under multiple GPL-compatible licenses.
 > We would encourage new contributors to distribute files under this license.
 
-Copyright (c) 2003-2009 **Santi Ontanon** - This file was officially downloaded
-from http://roadfighter.jorito.net
+* Copyright (c) 2003-2009 **Santi Ontanon** (Brain Games) - This file was officially
+downloaded from http://roadfighter.jorito.net
 
-Copyright (c) 2017 - Work continued by **Carlos Donizete Froes [a.k.a coringao]**
+* Copyright (c) 2017-2018 Work continued by **Carlos Donizete Froes [a.k.a coringao]**
