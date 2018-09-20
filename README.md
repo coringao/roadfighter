@@ -51,7 +51,7 @@ You will need to have the following dependencies installed: **SDL, SDL_image, SD
 
 On Debian/Ubuntu you can get all necessary packages by typing:
 
-    # apt install g++ make ttf-dejavu libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl1.2-dev libsdl-ttf2.0-dev
+    # apt install gcc make ttf-dejavu libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl1.2-dev libsdl-ttf2.0-dev
 
 Compilation:
 ------------
