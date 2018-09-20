@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=Road Fighter Remake
-Comment=Drive a car in a death race between you and a group of crazy drivers
-Exec=roadfighter
-Keywords=arcade;car;game;race;
-Terminal=false
-Type=Application
-Icon=roadfighter
-Categories=Game;ArcadeGame;
