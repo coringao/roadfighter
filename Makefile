@@ -1,6 +1,6 @@
 #####################################################################
-# Copyright 2003-2009 Santi Ontanon
-# Work continued by 2017 Carlos Donizete Froes [a.k.a coringao]
+# Copyright 2003-2009 Santi Ontanon (Brain Games)
+# Work continued by 2017-2018 Carlos Donizete Froes [a.k.a coringao]
 #
 # This file is part of Road Fighter Remake.
 # This is free software, licensed under the GPLv2 license.
@@ -31,8 +31,8 @@ OBJS = \
 	$(SRCDIR)/sound.o								\
 	$(SRCDIR)/main.o
 
-CC = g++
-CPPFLAGS += -std=gnu++11 -g3 -O3 -fPIE -D_FORTIFY_SOURCE=2 `sdl-config --cflags`
+CC = gcc
+CPPFLAGS += -std=gnu++14 -g3 -O3 -fPIE -D_FORTIFY_SOURCE=2 `sdl-config --cflags`
 LDFLAGS += -fPIE -pie `sdl-config --libs` -lSDL_image -lSDL_mixer -lSDL_ttf
 
 RM = rm -rf
