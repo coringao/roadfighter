@@ -107,7 +107,7 @@ public:
 	//  /|\
 	//SW S SE
 	//
-	//Returns some useful coords in shape (current)
+	//Returns some usefull coords in shape (current)
 	*/
 	inline Sint16 c_x(void)  const{return current_pos.x+current_pos.w/2;}
 	inline Sint16 c_y(void)  const{return current_pos.y+current_pos.h/2;}
@@ -189,8 +189,8 @@ public:
 	virtual void UpdateRects(void);
 	
 	//Move the surface
-	virtual inline void move_to(Sint16 x, Sint16 y){current_pos.x=x; current_pos.y=y;check_border();}
-	virtual inline void move(Sint16 x_step, Sint16 y_step){current_pos.x+=x_step; current_pos.y+=y_step; check_border();}
+	virtual void move_to(Sint16 x, Sint16 y){current_pos.x=x; current_pos.y=y;check_border();}
+	virtual void move(Sint16 x_step, Sint16 y_step){current_pos.x+=x_step; current_pos.y+=y_step; check_border();}
 
 	//Get pointer to surface
 	SDL_Surface* get_img(void) const{return surface;}

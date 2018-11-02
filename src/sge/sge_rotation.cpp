@@ -304,7 +304,7 @@ void _calcRect(SDL_Surface *src, SDL_Surface *dst, float theta, float xscale, fl
 		} \
 	} 
 
-// We get better performance if AA and normal rendering is separated into two functions (better optimization).
+// We get better performance if AA and normal rendering is seperated into two functions (better optimization).
 // sge_transform() is used as a wrapper.
 
 SDL_Rect sge_transformNorm(SDL_Surface *src, SDL_Surface *dst, float angle, float xscale, float yscale ,Uint16 px, Uint16 py, Uint16 qx, Uint16 qy, Uint8 flags)
@@ -645,7 +645,7 @@ SDL_Surface *sge_rotate_scaled_surface(SDL_Surface *src, int angle, double scale
 
 	/* Create the destination surface*/
 	int max = int( sqrt( (src->h*src->h/2 + src->w*src->w/2) *scale + 1 ) );
-	dest=SDL_AllocSurface(SDL_SWSURFACE, max, max, src->format->BitsPerPixel, src->format->Rmask, src->format->Gmask, src->format->Bmask, src->format->Amask );
+	dest=SDL_CreateRGBSurface(SDL_SWSURFACE, max, max, src->format->BitsPerPixel, src->format->Rmask, src->format->Gmask, src->format->Bmask, src->format->Amask );
 	if(!dest){SDL_SetError("SGE - Out of memory");return NULL;}
 	sge_ClearSurface(dest,bcol);	
 

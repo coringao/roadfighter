@@ -15,7 +15,7 @@
  *  version 2 of the License, or (at your option) any later version. *
  *********************************************************************/
 
-#include "SDL/SDL.h"
+#include "SDL.h"
 #include <stdio.h>
 #include <string.h>
 #include <new>
@@ -40,6 +40,7 @@ sge_cdata *sge_make_cmap(SDL_Surface *img)
 	Uint8 *map;
 	Sint16 x,y;
 	Sint32 offs;
+	Uint32 key;
 	int i;
 	
 	cdata=new(nothrow) sge_cdata;
@@ -56,7 +57,8 @@ sge_cdata *sge_make_cmap(SDL_Surface *img)
 	for(y=0; y < img->h; y++){
 		for(x=0; x < img->w; x++){
 			if(i>7){i=0;map++;}
-			if(sge_GetPixel(img, Sint16(x),Sint16(y))!=img->format->colorkey){
+			SDL_GetColorKey(img, &key);
+			if(sge_GetPixel(img, Sint16(x),Sint16(y))!=key){
 				*map=*map|sge_mask[i];	
 			}
 			i++;
@@ -245,17 +247,17 @@ int _sge_cmcheck(sge_cdata *cd1,Sint16 x1,Sint16 y1, sge_cdata *cd2,Sint16 x2,Si
 		
 	Sint16 y;
 
-	Sint16 length;
+	Sint16 lenght;
 	
 	if(x1+w1 < x2+w2)
-		length=w1-x1o;	
+		lenght=w1-x1o;	
 	else
-		length=w2-x2o;
+		lenght=w2-x2o;
 	
 	//AND(map1,map2)
 	for(y=_ua.y; y<=y1+h1 && y<=y2+h2; y++){
 	
-		offs=memand(map1,map2,i1,i2,length);
+		offs=memand(map1,map2,i1,i2,lenght);
 		if(offs){
 			_cx=_ua.x+offs-1; _cy=y;
 			return 1;
@@ -279,7 +281,7 @@ int _sge_cmcheck(sge_cdata *cd1,Sint16 x1,Sint16 y1, sge_cdata *cd2,Sint16 x2,Si
 
 //==================================================================================
 // Checks pixel perfect collision: 0-no collision 1-collision
-// calls sge_bbcheck automatically
+// calls sge_bbcheck automaticly
 //==================================================================================
 int sge_cmcheck(sge_cdata *cd1,Sint16 x1,Sint16 y1, sge_cdata *cd2,Sint16 x2,Sint16 y2)
 {
