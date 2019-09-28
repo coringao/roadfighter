@@ -31,8 +31,8 @@ OBJS = \
 	$(SRCDIR)/sound.o								\
 	$(SRCDIR)/main.o
 
-CC = g++
-CPPFLAGS += -std=gnu++17 -g3 -O3 -fPIE -D_FORTIFY_SOURCE=2 `pkg-config --cflags sdl2`
+CXX = gcc
+CXXFLAGS += -std=gnu++14 -g3 -O3 -fPIE -D_FORTIFY_SOURCE=2 `pkg-config --cflags sdl2`
 LDFLAGS += -fPIE -pie -lm `pkg-config --libs sdl2` -lSDL2_image -lSDL2_mixer -lSDL2_ttf
 
 RM = rm -rf
@@ -42,10 +42,10 @@ STRIP = strip
 all: $(EXE)
 
 %.o: %.cpp
-	$(CC) $(CFLAGS) $(CPPFLAGS) -c $< -o $@
+	$(CXX) $(CFLAGS) $(CXXFLAGS) -c $< -o $@
 
 $(EXE): $(OBJS)
-	$(CC) $^ -o $@ $(LDFLAGS)
+	$(CXX) $^ -o $@ $(LDFLAGS)
 	@$(STRIP) $@
 	@$(ECHO) "Compiled successfully and generated binary of the game"
 
