@@ -49,11 +49,11 @@ Special Thanks To:
 
 You will need to have the following dependencies installed:
 
-**SDL, SDL_image, SDL_mixer, SDL_ttf, ttf-dejavu**
+**SDL2, SDL2_image, SDL2_mixer, SDL2_ttf, ttf-dejavu**
 
 On Debian/Ubuntu you can get all necessary packages by typing:
 
-    # apt install gcc libsdl1.2-dev libsdl-image1.2-dev libsdl-mixer1.2-dev libsdl-ttf2.0-dev make ttf-dejavu
+    # apt install gcc libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev make ttf-dejavu
 
 Compilation:
 ------------
@@ -76,4 +76,4 @@ License
 
 * Copyright (c) 2003-2009 **Santi Ontanon** (Brain Games) - This file was
 officially downloaded from http://roadfighter.jorito.net
-* Copyright (c) 2017-2018 Work continued by **Carlos Donizete Froes [a.k.a coringao]**
+* Copyright (c) 2017-2019 Work continued by **Carlos Donizete Froes [a.k.a coringao]**
